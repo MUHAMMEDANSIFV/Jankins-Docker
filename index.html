@@ -1,0 +1,466 @@
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Ellie Template</title>
+    <link href="https://fonts.googleapis.com/css?family=Heebo:400,400i,500,700|Titillium+Web:600" rel="stylesheet">
+    <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
+	<style>
+		html{line-height:1.15;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}article,aside,footer,header,nav,section{display:block}h1{font-size:2em;margin:0.67em 0}figcaption,figure,main{display:block}figure{margin:1em 40px}hr{box-sizing:content-box;height:0;overflow:visible}pre{font-family:monospace, monospace;font-size:1em}a{background-color:transparent;-webkit-text-decoration-skip:objects}abbr[title]{border-bottom:none;text-decoration:underline;-webkit-text-decoration:underline dotted;text-decoration:underline dotted}b,strong{font-weight:inherit}b,strong{font-weight:bolder}code,kbd,samp{font-family:monospace, monospace;font-size:1em}dfn{font-style:italic}mark{background-color:#ff0;color:#000}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-0.25em}sup{top:-0.5em}audio,video{display:inline-block}audio:not([controls]){display:none;height:0}img{border-style:none}svg:not(:root){overflow:hidden}button,input,optgroup,select,textarea{font-family:sans-serif;font-size:100%;line-height:1.15;margin:0}button,input{overflow:visible}button,select{text-transform:none}button,html [type="button"],[type="reset"],[type="submit"]{-webkit-appearance:button}button::-moz-focus-inner,[type="button"]::-moz-focus-inner,[type="reset"]::-moz-focus-inner,[type="submit"]::-moz-focus-inner{border-style:none;padding:0}button:-moz-focusring,[type="button"]:-moz-focusring,[type="reset"]:-moz-focusring,[type="submit"]:-moz-focusring{outline:1px dotted ButtonText}fieldset{padding:0.35em 0.75em 0.625em}legend{box-sizing:border-box;color:inherit;display:table;max-width:100%;padding:0;white-space:normal}progress{display:inline-block;vertical-align:baseline}textarea{overflow:auto}[type="checkbox"],[type="radio"]{box-sizing:border-box;padding:0}[type="number"]::-webkit-inner-spin-button,[type="number"]::-webkit-outer-spin-button{height:auto}[type="search"]{-webkit-appearance:textfield;outline-offset:-2px}[type="search"]::-webkit-search-cancel-button,[type="search"]::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}details,menu{display:block}summary{display:list-item}canvas{display:inline-block}template{display:none}[hidden]{display:none}html{box-sizing:border-box}*,*:before,*:after{box-sizing:inherit}body{background:#141516;-moz-osx-font-smoothing:grayscale;-webkit-font-smoothing:antialiased}hr{border:0;display:block;height:1px;background:rgba(69,76,76,0.5);margin-top:24px;margin-bottom:24px}ul,ol{margin-top:0;margin-bottom:24px;padding-left:24px}ul{list-style:disc}ol{list-style:decimal}li>ul,li>ol{margin-bottom:0}dl{margin-top:0;margin-bottom:24px}dt{font-weight:700}dd{margin-left:24px;margin-bottom:24px}img{height:auto;max-width:100%;vertical-align:middle}figure{margin:24px 0}figcaption{font-size:16px;line-height:30px;padding:8px 0}img,svg{display:block}table{border-collapse:collapse;margin-bottom:24px;width:100%}tr{border-bottom:1px solid #454C4C}th{text-align:left}th,td{padding:10px 16px}th:first-child,td:first-child{padding-left:0}th:last-child,td:last-child{padding-right:0}html{font-size:20px;line-height:32px}body{color:#768696;font-size:1rem}body,button,input,select,textarea{font-family:"Heebo", sans-serif}a{color:inherit;text-decoration:underline}a:hover,a:active{outline:0;text-decoration:none}h1,h2,h3,h4,h5,h6,.h1,.h2,.h3,.h4,.h5,.h6{clear:both;color:#fff;font-family:"Titillium Web", sans-serif;font-weight:600}h1,.h1{font-size:40px;line-height:50px;letter-spacing:-0.2px}@media (min-width: 641px){h1,.h1{font-size:48px;line-height:58px;letter-spacing:0px}}h2,.h2{font-size:32px;line-height:42px;letter-spacing:-0.1px}@media (min-width: 641px){h2,.h2{font-size:40px;line-height:50px;letter-spacing:-0.2px}}h3,.h3,blockquote{font-size:24px;line-height:34px;letter-spacing:-0.1px}@media (min-width: 641px){h3,.h3,blockquote{font-size:32px;line-height:42px;letter-spacing:-0.1px}}h4,h5,h6,.h4,.h5,.h6{font-size:20px;line-height:32px;letter-spacing:-0.1px}@media (max-width: 640px){.h1-mobile{font-size:40px;line-height:50px;letter-spacing:-0.2px}.h2-mobile{font-size:32px;line-height:42px;letter-spacing:-0.1px}.h3-mobile{font-size:24px;line-height:34px;letter-spacing:-0.1px}.h4-mobile,.h5-mobile,.h6-mobile{font-size:20px;line-height:32px;letter-spacing:-0.1px}}.text-light h1,.text-light h2,.text-light h3,.text-light h4,.text-light h5,.text-light h6,.text-light .h1,.text-light .h2,.text-light .h3,.text-light .h4,.text-light .h5,.text-light .h6{color:#fff !important}.text-sm{font-size:18px;line-height:30px;letter-spacing:-0.1px}.text-xs{font-size:16px;line-height:30px;letter-spacing:-0.1px}h1,h2,.h1,.h2{margin-top:48px;margin-bottom:16px}h3,.h3{margin-top:36px;margin-bottom:12px}h4,h5,h6,.h4,.h5,.h6{margin-top:24px;margin-bottom:4px}p{margin-top:0;margin-bottom:24px}dfn,cite,em,i{font-style:italic}blockquote{color:#9CACBC;font-style:italic;margin-top:24px;margin-bottom:24px;margin-left:24px}blockquote::before{content:"\201C"}blockquote::after{content:"\201D"}blockquote p{display:inline}address{color:#768696;border-width:1px 0;border-style:solid;border-color:#454C4C;padding:24px 0;margin:0 0 24px}pre,pre h1,pre h2,pre h3,pre h4,pre h5,pre h6,pre .h1,pre .h2,pre .h3,pre .h4,pre .h5,pre .h6{font-family:"Courier 10 Pitch", Courier, monospace}pre,code,kbd,tt,var{background:#222424}pre{font-size:16px;line-height:30px;margin-bottom:1.6em;max-width:100%;overflow:auto;padding:24px;margin-top:24px;margin-bottom:24px}code,kbd,tt,var{font-family:Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;font-size:16px;padding:2px 4px}abbr,acronym{cursor:help}mark,ins{text-decoration:none}small{font-size:18px;line-height:30px;letter-spacing:-0.1px}b,strong{font-weight:700}button,input,select,textarea,label{font-size:20px;line-height:32px}.container,.container-sm{width:100%;margin:0 auto;padding-left:16px;padding-right:16px}@media (min-width: 481px){.container,.container-sm{padding-left:24px;padding-right:24px}}.container{max-width:1128px}.container-sm{max-width:848px}.container .container-sm{max-width:800px;padding-left:0;padding-right:0}.screen-reader-text{clip:rect(1px, 1px, 1px, 1px);position:absolute !important;height:1px;width:1px;overflow:hidden;word-wrap:normal !important}.screen-reader-text:focus{box-shadow:0 0 2px 2px rgba(0,0,0,0.6);clip:auto !important;display:block;font-size:16px;letter-spacing:-0.1px;font-weight:500;line-height:16px;text-decoration:none;background-color:#141516;color:#4353FF !important;border:none;height:auto;left:8px;padding:16px 36px;top:8px;width:auto;z-index:100000}.list-reset{list-style:none;padding:0}.text-left{text-align:left}.text-center{text-align:center}.text-right{text-align:right}.text-primary{color:#4353FF}.text-secondary{color:#43F1FF}.has-top-divider{position:relative}.has-top-divider::before{content:'';position:absolute;top:0;left:0;width:100%;display:block;height:1px;background:rgba(69,76,76,0.5)}.has-bottom-divider{position:relative}.has-bottom-divider::after{content:'';position:absolute;bottom:0;left:0;width:100%;display:block;height:1px;background:rgba(69,76,76,0.5)}.m-0{margin:0}.mt-0{margin-top:0}.mr-0{margin-right:0}.mb-0{margin-bottom:0}.ml-0{margin-left:0}.m-8{margin:8px}.mt-8{margin-top:8px}.mr-8{margin-right:8px}.mb-8{margin-bottom:8px}.ml-8{margin-left:8px}.m-16{margin:16px}.mt-16{margin-top:16px}.mr-16{margin-right:16px}.mb-16{margin-bottom:16px}.ml-16{margin-left:16px}.m-24{margin:24px}.mt-24{margin-top:24px}.mr-24{margin-right:24px}.mb-24{margin-bottom:24px}.ml-24{margin-left:24px}.m-32{margin:32px}.mt-32{margin-top:32px}.mr-32{margin-right:32px}.mb-32{margin-bottom:32px}.ml-32{margin-left:32px}.m-40{margin:40px}.mt-40{margin-top:40px}.mr-40{margin-right:40px}.mb-40{margin-bottom:40px}.ml-40{margin-left:40px}.m-48{margin:48px}.mt-48{margin-top:48px}.mr-48{margin-right:48px}.mb-48{margin-bottom:48px}.ml-48{margin-left:48px}.m-56{margin:56px}.mt-56{margin-top:56px}.mr-56{margin-right:56px}.mb-56{margin-bottom:56px}.ml-56{margin-left:56px}.m-64{margin:64px}.mt-64{margin-top:64px}.mr-64{margin-right:64px}.mb-64{margin-bottom:64px}.ml-64{margin-left:64px}.p-0{padding:0}.pt-0{padding-top:0}.pr-0{padding-right:0}.pb-0{padding-bottom:0}.pl-0{padding-left:0}.p-8{padding:8px}.pt-8{padding-top:8px}.pr-8{padding-right:8px}.pb-8{padding-bottom:8px}.pl-8{padding-left:8px}.p-16{padding:16px}.pt-16{padding-top:16px}.pr-16{padding-right:16px}.pb-16{padding-bottom:16px}.pl-16{padding-left:16px}.p-24{padding:24px}.pt-24{padding-top:24px}.pr-24{padding-right:24px}.pb-24{padding-bottom:24px}.pl-24{padding-left:24px}.p-32{padding:32px}.pt-32{padding-top:32px}.pr-32{padding-right:32px}.pb-32{padding-bottom:32px}.pl-32{padding-left:32px}.p-40{padding:40px}.pt-40{padding-top:40px}.pr-40{padding-right:40px}.pb-40{padding-bottom:40px}.pl-40{padding-left:40px}.p-48{padding:48px}.pt-48{padding-top:48px}.pr-48{padding-right:48px}.pb-48{padding-bottom:48px}.pl-48{padding-left:48px}.p-56{padding:56px}.pt-56{padding-top:56px}.pr-56{padding-right:56px}.pb-56{padding-bottom:56px}.pl-56{padding-left:56px}.p-64{padding:64px}.pt-64{padding-top:64px}.pr-64{padding-right:64px}.pb-64{padding-bottom:64px}.pl-64{padding-left:64px}.sr .has-animations .is-revealing{visibility:hidden}.input,.textarea{background-color:#fff;border-width:1px;border-style:solid;border-color:#454C4C;color:#768696;max-width:100%;width:100%}.input::-moz-placeholder, .textarea::-moz-placeholder{color:#9CACBC}.input::placeholder,.textarea::placeholder{color:#9CACBC}.input::-ms-input-placeholder,.textarea::-ms-input-placeholder{color:#9CACBC}.input:-ms-input-placeholder,.textarea:-ms-input-placeholder{color:#9CACBC}.input:hover,.textarea:hover{border-color:#393f3f}.input:active,.input:focus,.textarea:active,.textarea:focus{outline:none;border-color:#4353FF}.input[disabled],.textarea[disabled]{cursor:not-allowed;background-color:#222424;border-color:#222424}.input{-moz-appearance:none;-webkit-appearance:none;font-size:16px;letter-spacing:-0.1px;line-height:20px;padding:13px 16px;height:48px;box-shadow:none}.input .inline-input{display:inline;width:auto}.textarea{display:block;min-width:100%;resize:vertical}.textarea .inline-textarea{display:inline;width:auto}.field-grouped>.control:not(:last-child){margin-bottom:8px}@media (min-width: 641px){.field-grouped{display:flex}.field-grouped>.control{flex-shrink:0}.field-grouped>.control.control-expanded{flex-grow:1;flex-shrink:1}.field-grouped>.control:not(:last-child){margin-bottom:0;margin-right:8px}}.button{display:inline-flex;font-size:16px;letter-spacing:-0.1px;font-weight:500;line-height:16px;text-decoration:none !important;background-color:#141516;color:#4353FF !important;border:none;cursor:pointer;justify-content:center;padding:16px 36px;height:48px;text-align:center;white-space:nowrap}.button:active{outline:0}.button-shadow{position:relative}.button-shadow::before{content:'';position:absolute;top:0;right:0;bottom:0;left:0;box-shadow:0 8px 48px rgba(67,83,255,0.48);transition:box-shadow .15s ease}.button-shadow:hover::before{box-shadow:0 8px 48px rgba(67,83,255,0.6)}.button-sm{padding:8px 24px;height:32px}.button-sm.button-shadow::before{box-shadow:0 4px 32px rgba(67,83,255,0.48)}.button-sm.button-shadow:hover::before{box-shadow:0 4px 32px rgba(67,83,255,0.6)}.button-primary{color:#fff !important;transition:background .15s ease}.button-primary{background:#505fff;background:linear-gradient(65deg, #4353FF 0, #5D6AFF 100%)}.button-primary:hover{background:#5564ff;background:linear-gradient(65deg, #4858ff 0, #626fff 100%)}.button-block{display:flex}.site-header{position:relative;padding:24px 0}.site-header-inner{position:relative;display:flex;justify-content:space-between;align-items:center}.header-links{display:inline-flex}.header-links li{display:inline-flex}.header-links a:not(.button){font-size:16px;line-height:30px;letter-spacing:-0.1px;font-weight:700;color:#768696;text-transform:uppercase;text-decoration:none;line-height:16px;padding:8px 24px}.header-links a:not(.button):hover,.header-links a:not(.button):active{color:#fff}.hero{padding-top:48px}.hero-paragraph{margin-bottom:32px}.hero-illustration{display:none;position:relative}.hero-bg,.hero-square,.hero-dots,.hero-line{position:absolute;transform-origin:50% 50%}.hero-bg{top:-160px;left:28px}.hero-square-1{top:-270px;left:150px}.hero-square-2{top:-42px;left:600px}.hero-square-3{top:46px;left:74px}.hero-square-4{top:0;left:250px}.hero-square-5{top:108px;left:633px}.hero-square-6{top:140px;left:185px}.hero-square-7{top:336px;left:600px}.hero-square-8{top:350px;left:193px}.hero-dots-1{top:-107px;left:397px}.hero-dots-2{top:65px;left:202px}.hero-dots-3{top:396px;left:53px}.hero-line-1{top:318px;left:229px}@media (min-width: 641px){.hero{padding-top:80px}.hero-inner{display:flex}.hero-copy{padding-right:48px;min-width:512px;width:512px}.hero-illustration{display:block;width:528px}}@media (max-width: 640px){.hero-form{margin:0 auto}}.feature{padding-top:16px;padding-bottom:16px}.features-wrap:first-child{margin-top:-16px}.features-wrap:last-child{margin-bottom:-16px}.features-inner{max-width:400px}.feature-header{display:flex;align-items:center}@media (min-width: 641px){.feature{padding-top:24px;padding-bottom:24px}.features-wrap:first-child{margin-top:-24px}.features-wrap:last-child{margin-bottom:-24px}}.is-boxed{background:#1e1f21}.body-wrap{background:#141516;overflow:hidden;display:flex;flex-direction:column;min-height:100vh}.boxed-container{max-width:1440px;margin:0 auto;box-shadow:0 16px 48px rgba(20,21,22,0.5)}main{flex:1 0 auto}.section-inner{position:relative;padding-top:64px;padding-bottom:64px}@media (min-width: 641px){.section-inner{padding-top:88px;padding-bottom:88px}}.site-footer{position:relative;font-size:14px;line-height:20px;letter-spacing:0px}.site-footer a{color:#768696;text-decoration:none}.site-footer a:hover,.site-footer a:active{color:#fff;text-decoration:underline}.footer-bg,.footer-dots{display:none}.site-footer-inner{position:relative;display:flex;flex-wrap:wrap;align-items:center;padding-top:32px;padding-bottom:32px}.footer-social-links,.footer-copyright{flex:none;width:100%;display:inline-flex;justify-content:center}.footer-copyright{margin-bottom:24px}.footer-social-links{margin-bottom:0}.footer-social-links li{display:inline-flex}.footer-social-links li+li{margin-left:16px}.footer-social-links li a{padding:8px}@media (min-width: 641px){.site-footer::before{height:202px}.footer-bg,.footer-dots{display:block;position:absolute}.footer-bg{bottom:0;right:0}.footer-dots{bottom:124px;right:127px}.site-footer-inner{justify-content:space-between}.footer-social-links,.footer-copyright{flex:50%}.footer-copyright{margin-bottom:0;justify-content:flex-start}.footer-social-links{justify-content:flex-end}}
+	</style>
+</head>
+<body class="is-boxed">
+    <div class="body-wrap boxed-container">
+        <header class="site-header">
+            <div class="container">
+                <div class="site-header-inner">
+                    <div class="brand header-brand">
+                        <h1 class="m-0">
+                            <a href="#">
+								<svg width="32" height="32" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+								    <title>Ellieeeee</title>
+								    <defs>
+								        <linearGradient x1="0%" y1="0%" y2="100%" id="logo-a">
+								            <stop stop-color="#4353FF" offset="0%"/>
+								            <stop stop-color="#4353FF" stop-opacity=".32" offset="100%"/>
+								        </linearGradient>
+								        <linearGradient x1="0%" y1="0%" y2="100%" id="logo-b">
+								            <stop stop-color="#4353FF" offset="0%"/>
+								            <stop stop-color="#4353FF" stop-opacity=".32" offset="100%"/>
+								        </linearGradient>
+								        <linearGradient x1="0%" y1="0%" y2="100%" id="logo-c">
+								            <stop stop-color="#78F9FF" stop-opacity=".24" offset="0%"/>
+								            <stop stop-color="#43F1FF" offset="55.496%"/>
+								            <stop stop-color="#43F1FF" stop-opacity=".24" offset="100%"/>
+								        </linearGradient>
+								    </defs>
+								    <g fill="none" fill-rule="evenodd">
+								        <path d="M4 0h12v16H0V4a4 4 0 0 1 4-4z" fill="url(#logo-a)"/>
+								        <path d="M16 16h16v12a4 4 0 0 1-4 4H16V16z" fill="url(#logo-b)"/>
+								        <path d="M11.5 20.5H.5v1h10v10h1v-11z" stroke="url(#logo-c)" transform="matrix(-1 0 0 1 12 0)"/>
+								        <path d="M31.5.5h-11v1h10v10h1V.5z" stroke="url(#logo-c)" transform="matrix(1 0 0 -1 0 12)"/>
+								    </g>
+								</svg>
+                            </a>
+                        </h1>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <main>
+            <section class="hero">
+                <div class="container">
+                    <div class="hero-inner">
+						<div class="hero-copy">
+	                        <h1 class="hero-title mt-0 is-revealing">Landing template for startups</h1>
+	                        <p class="hero-paragraph is-revealing">Our landing page template works on all devices, so you only have to set it up once, and get beautiful results forever.</p>
+							<div class="hero-form field field-grouped is-revealing">
+	                            <div class="control control-expanded">
+	                                <input class="input" type="email" name="email" placeholder="Your best email&hellip;">
+	                            </div>
+	                            <div class="control">
+	                                <a class="button button-primary button-block" href="#">Notify Me</a>
+	                            </div>
+	                        </div>
+						</div>
+						<div class="hero-illustration">
+							<div class="hero-bg">
+								<svg width="720" height="635" xmlns="http://www.w3.org/2000/svg">
+								    <defs>
+								        <linearGradient x1="50%" y1="0%" x2="50%" y2="97.738%" id="a">
+								            <stop stop-color="#151616" offset="0%"/>
+								            <stop stop-color="#222424" offset="100%"/>
+								        </linearGradient>
+								    </defs>
+								    <path d="M0 0h720v504.382L279.437 630.304c-53.102 15.177-108.454-15.567-123.631-68.669-.072-.25-.142-.5-.211-.75L0 0z" fill="url(#a)" fill-rule="evenodd"/>
+								</svg>
+							</div>
+							<div class="hero-square hero-square-1 is-moving-object is-rotating">
+								<svg width="220" height="220" xmlns="http://www.w3.org/2000/svg">
+									<defs>
+										<linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="square-1-a">
+											<stop stop-color="#4353FF" offset="0%"/>
+											<stop stop-color="#4353FF" stop-opacity=".32" offset="100%"/>
+										</linearGradient>
+										<linearGradient x1="18.74%" y1="17.384%" x2="96.787%" y2="88.669%" id="square-1-b">
+											<stop stop-color="#43F1FF" stop-opacity="0" offset="0%"/>
+											<stop stop-color="#43F1FF" offset="53.489%"/>
+											<stop stop-color="#43F1FF" stop-opacity="0" offset="100%"/>
+										</linearGradient>
+									</defs>
+									<g fill="none" fill-rule="evenodd">
+										<path fill="url(#square-1-a)" opacity=".64" d="M0 0h220v220H0z"/>
+										<path d="M0 65.022V61.7c51.102-26.116 77.322-13.388 77.322 38.41 0 57.718 25.944 67.701 79.782 30.373l1.709 2.466c-55.678 38.604-84.491 27.517-84.491-32.839 0-49.494-24.315-61.27-74.322-35.087z" fill="url(#square-1-b)" fill-rule="nonzero" opacity=".701"/>
+										<path d="M113.203 220c2.943-57.607 37.666-164 90.473-164 4.973 0 10.458.203 16.324.614v77.24c-5.819.237-11.3 1.007-16.324 2.458-32.685 9.44-57.608 55.87-72.976 83.688h-17.497z" fill-opacity=".096" fill="#43F1FF"/>
+									</g>
+								</svg>
+							</div>
+							<div class="hero-square hero-square-2 is-moving-object is-rotating">
+								<svg width="88" height="88" xmlns="http://www.w3.org/2000/svg">
+									<defs>
+										<linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="square-2-a">
+											<stop stop-color="#4353FF" offset="0%"/>
+											<stop stop-color="#4353FF" stop-opacity=".32" offset="100%"/>
+										</linearGradient>
+										<linearGradient x1="-31.43%" y1="104.265%" x2="143.71%" y2="43.581%" id="square-2-b">
+											<stop stop-color="#43F1FF" stop-opacity=".24" offset="0%"/>
+											<stop stop-color="#43F1FF" stop-opacity=".16" offset="100%"/>
+										</linearGradient>
+									</defs>
+									<g fill="none" fill-rule="evenodd">
+										<path fill="url(#square-2-a)" d="M0 0h88v88H0z"/>
+										<path d="M19.717 36.579C13.824 33.969 7.004 32.555 0 31.535V0h88v88H76.869C59.773 67.766 40.697 45.872 19.717 36.579z" fill="url(#square-2-b)"/>
+									</g>
+								</svg>
+							</div>
+							<div class="hero-square hero-square-3 is-moving-object is-rotating">
+								<svg width="64" height="64" xmlns="http://www.w3.org/2000/svg">
+								    <defs>
+								        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="square-3-a">
+								            <stop stop-color="#4353FF" offset="0%"/>
+								            <stop stop-color="#4353FF" stop-opacity=".16" offset="100%"/>
+								        </linearGradient>
+								        <linearGradient x1="-58.825%" y1="39.622%" x2="81.589%" y2="-11.971%" id="square-3-b">
+								            <stop stop-color="#43F1FF" stop-opacity=".24" offset="0%"/>
+								            <stop stop-color="#43F1FF" stop-opacity=".163" offset="100%"/>
+								        </linearGradient>
+								    </defs>
+								    <g fill="none" fill-rule="evenodd" opacity=".64">
+								        <path fill="url(#square-3-a)" d="M0 0h64v64H0z"/>
+								        <path d="M14.03 0C27.176 13.07 42 27.791 42 38.165c0 17.46-14.154-11.127-31.614-11.127-2.67 0-6.289.931-10.386 2.406V0h14.03z" fill="url(#square-3-b)"/>
+								    </g>
+								</svg>
+							</div>
+							<div class="hero-square hero-square-4 is-moving-object is-rotating">
+								<svg width="320" height="320" xmlns="http://www.w3.org/2000/svg">
+								    <defs>
+								        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="square-4-a">
+								            <stop stop-color="#4353FF" offset="0%"/>
+								            <stop stop-color="#4353FF" stop-opacity=".32" offset="100%"/>
+								        </linearGradient>
+								        <linearGradient x1="18.74%" y1="17.384%" x2="96.787%" y2="88.669%" id="square-4-b">
+								            <stop stop-color="#43F1FF" stop-opacity="0" offset="0%"/>
+								            <stop stop-color="#43F1FF" offset="53.489%"/>
+								            <stop stop-color="#43F1FF" stop-opacity="0" offset="100%"/>
+								        </linearGradient>
+								        <linearGradient x1="0%" y1="57.64%" x2="94.346%" y2="8.32%" id="square-4-c">
+								            <stop stop-color="#43F1FF" stop-opacity=".24" offset="0%"/>
+								            <stop stop-color="#43F1FF" stop-opacity=".16" offset="100%"/>
+								        </linearGradient>
+								        <radialGradient cx="100%" cy="100%" fx="100%" fy="100%" r="136.8%" id="square-4-d">
+								            <stop stop-color="#43F1FF" offset="0%"/>
+								            <stop stop-color="#43F1FF" stop-opacity="0" offset="100%"/>
+								        </radialGradient>
+								        <radialGradient cx="100%" cy="100%" fx="100%" fy="100%" r="140.264%" id="square-4-e">
+								            <stop stop-color="#43F1FF" offset="0%"/>
+								            <stop stop-color="#43F1FF" stop-opacity="0" offset="100%"/>
+								        </radialGradient>
+								        <radialGradient cx="100%" cy="100%" fx="100%" fy="100%" r="137.638%" id="square-4-f">
+								            <stop stop-color="#43F1FF" offset="0%"/>
+								            <stop stop-color="#43F1FF" stop-opacity="0" offset="100%"/>
+								        </radialGradient>
+								    </defs>
+								    <g fill="none" fill-rule="evenodd">
+								        <rect fill="url(#square-4-a)" width="320" height="320" rx="2"/>
+								        <path d="M278.958 209.715c-54.758 37.966-82.136 27.43-82.136-31.606s-34.335-65.905-103.005-20.607C49.492 185.246 33.604 160.412 46.154 83" stroke="url(#square-4-b)" stroke-width="3"/>
+								        <path d="M71.05 41.844c57.243-16.532 154.657 38.697 154.657-16.532 0-8.934-4.692-17.934-10.123-25.312H0v99.92c19.6-22.665 44.942-50.536 71.05-58.076z" fill="url(#square-4-c)"/>
+								        <path d="M320 320V66C179.72 66 66 179.72 66 320h254z" fill="url(#square-4-d)" opacity=".16"/>
+								        <path d="M320 320V131c-104.382 0-189 84.618-189 189h189z" fill="url(#square-4-e)" opacity=".32"/>
+								        <path d="M320 320V196c-68.483 0-124 55.517-124 124h124z" fill="url(#square-4-f)"/>
+								    </g>
+								</svg>
+							</div>
+							<div class="hero-square hero-square-5 is-moving-object is-rotating">
+								<svg width="141" height="140" xmlns="http://www.w3.org/2000/svg">
+								    <defs>
+								        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="square-5-a">
+								            <stop stop-color="#4353FF" offset="0%"/>
+								            <stop stop-color="#4353FF" stop-opacity=".32" offset="100%"/>
+								        </linearGradient>
+								        <linearGradient x1="27.288%" y1="50%" x2="172.696%" y2="-8.701%" id="square-5-b">
+								            <stop stop-color="#43F1FF" stop-opacity=".24" offset="0%"/>
+								            <stop stop-color="#43F1FF" stop-opacity=".16" offset="100%"/>
+								        </linearGradient>
+								        <linearGradient x1="18.74%" y1="17.384%" x2="96.787%" y2="88.669%" id="square-5-c">
+								            <stop stop-color="#43F1FF" stop-opacity="0" offset="0%"/>
+								            <stop stop-color="#43F1FF" offset="53.489%"/>
+								            <stop stop-color="#43F1FF" stop-opacity="0" offset="100%"/>
+								        </linearGradient>
+								    </defs>
+								    <g fill="none" fill-rule="evenodd">
+								        <path opacity=".24" fill="url(#square-5-a)" d="M19 18h128v128H19z" transform="translate(-6 -6)"/>
+								        <path d="M147 76.088V18h-35.004c-4.63 24.206-16.838 55.057-44.819 79.224-63.217 54.6 46.59-21.136 79.823-21.136z" opacity=".24" fill="url(#square-5-b)" transform="translate(-6 -6)"/>
+								        <path d="M0 0l39.459 40.249" stroke="url(#square-5-c)" stroke-width="3" transform="translate(-6 -6)"/>
+								    </g>
+								</svg>
+							</div>
+							<div class="hero-square hero-square-6 is-moving-object is-rotating">
+								<svg width="128" height="128" xmlns="http://www.w3.org/2000/svg">
+								    <defs>
+								        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="square-6-a">
+								            <stop stop-color="#4353FF" offset="0%"/>
+								            <stop stop-color="#4353FF" stop-opacity=".32" offset="100%"/>
+								        </linearGradient>
+								        <linearGradient x1="14.98%" y1="57.941%" x2="95.966%" y2="33.366%" id="square-6-b">
+								            <stop stop-color="#43F1FF" stop-opacity=".24" offset="0%"/>
+								            <stop stop-color="#43F1FF" stop-opacity=".16" offset="100%"/>
+								        </linearGradient>
+								        <linearGradient x1="97.033%" y1="97.033%" x2="0%" y2="0%" id="square-6-c">
+								            <stop stop-color="#43F1FF" offset="0%"/>
+								            <stop stop-color="#43F1FF" stop-opacity=".24" offset="100%"/>
+								        </linearGradient>
+								        <linearGradient x1="18.74%" y1="17.384%" x2="96.787%" y2="88.669%" id="square-6-d">
+								            <stop stop-color="#43F1FF" stop-opacity="0" offset="0%"/>
+								            <stop stop-color="#43F1FF" offset="53.489%"/>
+								            <stop stop-color="#43F1FF" stop-opacity="0" offset="100%"/>
+								        </linearGradient>
+								    </defs>
+								    <g fill="none" fill-rule="evenodd">
+								        <path fill="url(#square-6-a)" d="M0 0h128v128H0z"/>
+								        <path d="M27.652 128H0V32.762c13.602-4.224 26.559-6.606 36.988-6.606 42.25 0-38.976 13.508-19.488 50.235C25.002 90.529 28.544 109.73 27.652 128z" fill="url(#square-6-b)"/>
+								        <path fill="url(#square-6-c)" opacity=".32" d="M88 88h40v40H88z"/>
+								        <path d="M69 68l39.459 40.249" stroke="url(#square-6-d)" stroke-width="3"/>
+								    </g>
+								</svg>
+							</div>
+							<div class="hero-square hero-square-7 is-moving-object is-rotating">
+								<svg width="64" height="64" xmlns="http://www.w3.org/2000/svg">
+								    <defs>
+								        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="square-7-a">
+								            <stop stop-color="#4353FF" offset="0%"/>
+								            <stop stop-color="#4353FF" stop-opacity=".32" offset="100%"/>
+								        </linearGradient>
+								        <radialGradient cx="-5.754%" cy="67.691%" fx="-5.754%" fy="67.691%" r="140.869%" gradientTransform="scale(-1 -.64163) rotate(55.582 1.643 -.08)" id="square-7-b">
+								            <stop stop-color="#43F1FF" offset="0%"/>
+								            <stop stop-color="#43F1FF" stop-opacity="0" offset="100%"/>
+								        </radialGradient>
+								        <linearGradient x1="0%" y1="23.176%" x2="96.787%" y2="88.669%" id="square-7-c">
+								            <stop stop-color="#43F1FF" stop-opacity="0" offset="0%"/>
+								            <stop stop-color="#43F1FF" offset="32.912%"/>
+								            <stop stop-color="#43F1FF" stop-opacity="0" offset="100%"/>
+								        </linearGradient>
+								    </defs>
+								    <g fill="none" fill-rule="evenodd" opacity=".601">
+								        <path fill="url(#square-7-a)" d="M0 0h64v64H0z"/>
+								        <path d="M0 64V.1C22.901 1.644 41 20.709 41 44c0 7.202-1.73 14-4.798 20H0z" fill="url(#square-7-b)"/>
+								        <path d="M63.925 58.495c-4.136-2.459-9.143-4.747-15.272-6.916-23.745-8.402-32.768-20.182-27.972-32.9 2.7-7.16 9.914-13.947 18.763-18.679h7.221c-10.84 4.263-20.209 11.866-23.177 19.737-4.076 10.81 3.808 21.103 26.166 29.014 5.524 1.955 10.252 4.048 14.271 6.3v3.444z" fill="url(#square-7-c)" fill-rule="nonzero"/>
+								    </g>
+								</svg>
+							</div>
+							<div class="hero-square hero-square-8 is-moving-object is-rotating">
+								<svg width="40" height="40" xmlns="http://www.w3.org/2000/svg">
+								    <defs>
+								        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="square-8-a">
+								            <stop stop-color="#4353FF" offset="0%"/>
+								            <stop stop-color="#4353FF" stop-opacity=".32" offset="100%"/>
+								        </linearGradient>
+								        <linearGradient x1="66.071%" y1="50%" x2="168.952%" y2="11.585%" id="square-8-b">
+								            <stop stop-color="#43F1FF" stop-opacity=".123" offset="0%"/>
+								            <stop stop-color="#43F1FF" stop-opacity=".16" offset="100%"/>
+								        </linearGradient>
+								    </defs>
+								    <g fill="none" fill-rule="evenodd">
+								        <path fill="url(#square-8-a)" opacity=".24" d="M0 0h40v40H0z"/>
+								        <path d="M40 0h-4.67c-.999 7.225-3.804 17.536-12.85 25.35-15.393 13.294 5.041-.287 17.36-4.644L40 0z" fill="url(#square-8-b)"/>
+								    </g>
+								</svg>
+							</div>
+							<div class="hero-dots hero-dots-1 is-moving-object is-translating" data-translating-factor="160">
+								<svg width="279" height="97" xmlns="http://www.w3.org/2000/svg">
+								    <g fill="#43F1FF" fill-rule="evenodd">
+								        <path d="M71.686 0l-2.899 1.334L68 4.157l.926 2.688L71.686 8l2.6-1.31L76 4.156l-1.295-2.94z"/>
+								        <path fill-opacity=".64" d="M38.843 2l-1.45.667L37 4.079l.463 1.344 1.38.577 1.3-.655L41 4.079l-.648-1.47z"/>
+								        <path fill-opacity=".24" d="M65.843 55l-1.45.667L64 57.079l.463 1.344 1.38.577 1.3-.655.857-1.266-.648-1.47z"/>
+								        <path fill-opacity=".64" d="M94.765 29l-2.175 1-.59 2.118.695 2.016 2.07.866 1.95-.983 1.285-1.9-.972-2.204z"/>
+								        <path fill-opacity=".8" d="M58.765 25l-2.175 1-.59 2.118.695 2.016 2.07.866 1.95-.983 1.285-1.9-.972-2.204z"/>
+								        <path fill-opacity=".48" d="M18.843 44l-1.45.667L17 46.079l.463 1.344 1.38.577 1.3-.655.857-1.266-.648-1.47z"/>
+								        <path fill-opacity=".64" d="M8.843 29l-1.45.667L7 31.079l.463 1.344 1.38.577 1.3-.655.857-1.266-.648-1.47z"/>
+								        <path fill-opacity=".48" d="M32.843 29l-1.45.667L31 31.079l.463 1.344 1.38.577 1.3-.655.857-1.266-.648-1.47zM.922 45l-.725.333L0 46.04l.232.672.69.289.65-.328L2 46.04l-.324-.735z"/>
+								        <path fill-opacity=".24" d="M267.843 93l-1.45.667-.393 1.412.463 1.344 1.38.577 1.3-.655.857-1.266-.648-1.47z"/>
+								        <path fill-opacity=".8" d="M275.765 75l-2.175 1-.59 2.118.695 2.016 2.07.866 1.95-.983 1.285-1.9-.972-2.204z"/>
+								        <path fill-opacity=".48" d="M259.843 78l-1.45.667-.393 1.412.463 1.344 1.38.577 1.3-.655.857-1.266-.648-1.47z"/>
+								    </g>
+								</svg>
+							</div>
+							<div class="hero-dots hero-dots-2 is-moving-object is-translating" data-translating-factor="120">
+								<svg width="138" height="132" xmlns="http://www.w3.org/2000/svg">
+								    <g fill="#43F1FF" fill-rule="evenodd">
+								        <path d="M73.686 66l-2.899 1.334L70 70.157l.926 2.688L73.686 74l2.6-1.31L78 70.156l-1.295-2.94z"/>
+								        <path fill-opacity=".64" d="M108.843 0l-1.45.667L107 2.079l.463 1.344 1.38.577 1.3-.655.857-1.266-.648-1.47z"/>
+								        <path fill-opacity=".24" d="M135.843 53l-1.45.667-.393 1.412.463 1.344 1.38.577 1.3-.655.857-1.266-.648-1.47z"/>
+								        <path fill-opacity=".64" d="M107.765 53l-2.175 1-.59 2.118.695 2.016 2.07.866 1.95-.983 1.285-1.9-.972-2.204z"/>
+								        <path fill-opacity=".8" d="M128.765 23l-2.175 1-.59 2.118.695 2.016 2.07.866 1.95-.983 1.285-1.9-.972-2.204z"/>
+								        <path fill-opacity=".48" d="M88.843 42l-1.45.667L87 44.079l.463 1.344 1.38.577 1.3-.655.857-1.266-.648-1.47z"/>
+								        <path fill-opacity=".64" d="M78.843 27l-1.45.667L77 29.079l.463 1.344 1.38.577 1.3-.655.857-1.266-.648-1.47z"/>
+								        <path fill-opacity=".48" d="M102.843 27l-1.45.667-.393 1.412.463 1.344 1.38.577 1.3-.655.857-1.266-.648-1.47zM70.922 43l-.725.333-.197.706.232.672.69.289.65-.328.428-.633-.324-.735z"/>
+								        <path d="M2.765 126L.59 127 0 129.118l.695 2.016 2.07.866 1.95-.983 1.285-1.9-.972-2.204z"/>
+								        <path fill-opacity=".64" d="M24.843 127l-1.45.667-.393 1.412.463 1.344 1.38.577 1.3-.655.857-1.266-.648-1.47z"/>
+								        <path fill-opacity=".48" d="M6.922 114l-.725.333-.197.706.232.672.69.289.65-.328.428-.633-.324-.735z"/>
+								    </g>
+								</svg>
+							</div>
+							<div class="hero-dots hero-dots-3 is-moving-object is-translating" data-translating-factor="160">
+								<svg width="98" height="59" xmlns="http://www.w3.org/2000/svg">
+								    <g fill="#43F1FF" fill-rule="evenodd">
+								        <path d="M26.314 0l2.899 1.334L30 4.157l-.926 2.688L26.314 8l-2.6-1.31L22 4.156l1.295-2.94z"/>
+								        <path fill-opacity=".64" d="M59.157 2l1.45.667L61 4.079l-.463 1.344-1.38.577-1.3-.655L57 4.079l.648-1.47z"/>
+								        <path fill-opacity=".24" d="M32.157 55l1.45.667.393 1.412-.463 1.344-1.38.577-1.3-.655L30 57.079l.648-1.47z"/>
+								        <path fill-opacity=".64" d="M3.235 29l2.175 1L6 32.118l-.695 2.016-2.07.866-1.95-.983L0 32.117l.972-2.204z"/>
+								        <path fill-opacity=".8" d="M39.235 25l2.175 1 .59 2.118-.695 2.016-2.07.866-1.95-.983-1.285-1.9.972-2.204z"/>
+								        <path fill-opacity=".48" d="M79.157 44l1.45.667.393 1.412-.463 1.344-1.38.577-1.3-.655L77 46.079l.648-1.47z"/>
+								        <path fill-opacity=".64" d="M89.157 29l1.45.667.393 1.412-.463 1.344-1.38.577-1.3-.655L87 31.079l.648-1.47z"/>
+								        <path fill-opacity=".48" d="M65.157 29l1.45.667.393 1.412-.463 1.344-1.38.577-1.3-.655L63 31.079l.648-1.47zM97.078 45l.725.333.197.706-.232.672-.69.289-.65-.328L96 46.04l.324-.735z"/>
+								    </g>
+								</svg>
+							</div>
+							<div class="hero-line hero-line-1">
+								<svg width="344" height="217" xmlns="http://www.w3.org/2000/svg">
+								    <defs>
+								        <linearGradient x1="18.74%" y1="17.384%" x2="96.787%" y2="88.669%" id="line-1-a">
+								            <stop stop-color="#5D6AFF" stop-opacity="0" offset="0%"/>
+								            <stop stop-color="#5D6AFF" offset="53.489%"/>
+								            <stop stop-color="#5D6AFF" stop-opacity="0" offset="100%"/>
+								        </linearGradient>
+								    </defs>
+								    <path d="M340.86 180.664l2.281 3.287c-79.796 55.378-120.994 39.511-120.994-47.035 0-82.777-47.283-92.246-144.735-27.901-32.607 20.428-55.391 21.53-67.544 2.516C-1.882 93.147-3.092 56.053 5.987 0l3.948.64c-8.928 55.125-7.743 91.453 3.303 108.736 10.644 16.653 31.058 15.666 62.01-3.725 99.65-65.797 150.9-55.534 150.9 31.265 0 83.03 37.371 97.424 114.713 43.748z" fill="url(#line-1-a)" fill-rule="nonzero" transform="matrix(-1 0 0 1 343.141 0)"/>
+								</svg>
+							</div>
+						</div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="features section">
+                <div class="container">
+                    <div class="features-inner section-inner">
+						<div class="features-wrap">
+	                        <div class="feature">
+	                            <div class="feature-inner">
+									<div class="feature-header mb-16">
+										<div class="feature-icon mr-16">
+											<svg width="32" height="32" xmlns="http://www.w3.org/2000/svg">
+											    <g fill-rule="nonzero" fill="none">
+											        <path d="M7 8H1a1 1 0 0 1-1-1V1a1 1 0 0 1 1-1h6a1 1 0 0 1 1 1v6a1 1 0 0 1-1 1zM19 8h-6a1 1 0 0 1-1-1V1a1 1 0 0 1 1-1h6a1 1 0 0 1 1 1v6a1 1 0 0 1-1 1z" fill="#4353FF"/>
+											        <path d="M19 20h-6a1 1 0 0 1-1-1v-6a1 1 0 0 1 1-1h6a1 1 0 0 1 1 1v6a1 1 0 0 1-1 1z" fill="#43F1FF"/>
+											        <path d="M31 8h-6a1 1 0 0 1-1-1V1a1 1 0 0 1 1-1h6a1 1 0 0 1 1 1v6a1 1 0 0 1-1 1z" fill="#4353FF"/>
+											        <path d="M7 20H1a1 1 0 0 1-1-1v-6a1 1 0 0 1 1-1h6a1 1 0 0 1 1 1v6a1 1 0 0 1-1 1z" fill="#43F1FF"/>
+											        <path d="M7 32H1a1 1 0 0 1-1-1v-6a1 1 0 0 1 1-1h6a1 1 0 0 1 1 1v6a1 1 0 0 1-1 1z" fill="#4353FF"/>
+											        <path d="M29.5 18h-3a.5.5 0 0 1-.5-.5v-3a.5.5 0 0 1 .5-.5h3a.5.5 0 0 1 .5.5v3a.5.5 0 0 1-.5.5z" fill="#43F1FF"/>
+											        <path d="M17.5 30h-3a.5.5 0 0 1-.5-.5v-3a.5.5 0 0 1 .5-.5h3a.5.5 0 0 1 .5.5v3a.5.5 0 0 1-.5.5zM29.5 30h-3a.5.5 0 0 1-.5-.5v-3a.5.5 0 0 1 .5-.5h3a.5.5 0 0 1 .5.5v3a.5.5 0 0 1-.5.5z" fill="#4353FF"/>
+											    </g>
+											</svg>
+		                                </div>
+		                                <h4 class="feature-title m-0">Discover</h4>
+									</div>
+	                                <p class="text-sm mb-0">A pseudo-Latin text used in web design, layout, and printing in place of things to emphasise design elements.</p>
+	                            </div>
+	                        </div>
+							<div class="feature">
+	                            <div class="feature-inner">
+									<div class="feature-header mb-16">
+										<div class="feature-icon mr-16">
+											<svg width="32" height="32" xmlns="http://www.w3.org/2000/svg">
+											    <g fill-rule="nonzero" fill="none">
+											        <path d="M4 12H0V5a5.006 5.006 0 0 1 5-5h7v4H5a1 1 0 0 0-1 1v7z" fill="#43F1FF"/>
+											        <path d="M32 12h-4V5a1 1 0 0 0-1-1h-7V0h7a5.006 5.006 0 0 1 5 5v7zM12 32H5a5.006 5.006 0 0 1-5-5v-7h4v7a1 1 0 0 0 1 1h7v4z" fill="#4353FF"/>
+											        <path d="M27 32h-7v-4h7a1 1 0 0 0 1-1v-7h4v7a5.006 5.006 0 0 1-5 5z" fill="#43F1FF"/>
+											    </g>
+											</svg>
+		                                </div>
+		                                <h4 class="feature-title m-0">Discover</h4>
+									</div>
+	                                <p class="text-sm mb-0">A pseudo-Latin text used in web design, layout, and printing in place of things to emphasise design elements.</p>
+	                            </div>
+	                        </div>
+							<div class="feature">
+	                            <div class="feature-inner">
+									<div class="feature-header mb-16">
+										<div class="feature-icon mr-16">
+											<svg width="32" height="32" xmlns="http://www.w3.org/2000/svg">
+											    <g fill="none" fill-rule="nonzero">
+											        <path d="M16 9c2.206 0 4-1.794 4-4s-1.794-4-4-4-4 1.794-4 4 1.794 4 4 4z" fill="#4353FF"/>
+											        <path d="M27 9c2.206 0 4-1.794 4-4s-1.794-4-4-4-4 1.794-4 4 1.794 4 4 4z" fill="#43F1FF"/>
+											        <path d="M27 12c-2.206 0-4 1.794-4 4s1.794 4 4 4 4-1.794 4-4-1.794-4-4-4z" fill="#4353FF"/>
+											        <path d="M5 23c-2.206 0-4 1.794-4 4s1.794 4 4 4 4-1.794 4-4-1.794-4-4-4z" fill="#43F1FF"/>
+											        <path d="M27 23c-1.859 0-3.41 1.28-3.858 3h-3.284A3.994 3.994 0 0 0 17 23.142v-3.284c1.72-.447 3-2 3-3.858 0-2.206-1.794-4-4-4-1.859 0-3.41 1.28-3.858 3H8.858A3.994 3.994 0 0 0 6 12.142V8.858c1.72-.447 3-2 3-3.858 0-2.206-1.794-4-4-4S1 2.794 1 5c0 1.858 1.28 3.41 3 3.858v3.284c-1.72.447-3 2-3 3.858 0 2.206 1.794 4 4 4 1.859 0 3.41-1.28 3.858-3h3.284A3.994 3.994 0 0 0 15 19.858v3.284c-1.72.447-3 2-3 3.858 0 2.206 1.794 4 4 4 1.859 0 3.41-1.28 3.858-3h3.284c.447 1.72 2 3 3.858 3 2.206 0 4-1.794 4-4s-1.794-4-4-4z" fill="#4353FF"/>
+											    </g>
+											</svg>
+		                                </div>
+		                                <h4 class="feature-title m-0">Discover</h4>
+									</div>
+	                                <p class="text-sm mb-0">A pseudo-Latin text used in web design, layout, and printing in place of things to emphasise design elements.</p>
+	                            </div>
+	                        </div>
+						</div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer class="site-footer">
+			<div class="footer-bg">
+				<svg width="385" height="305" xmlns="http://www.w3.org/2000/svg">
+				    <defs>
+				        <linearGradient x1="50%" y1="34.994%" x2="50%" y2="97.738%" id="footer-bg">
+				            <stop stop-color="#151616" offset="0%"/>
+				            <stop stop-color="#222424" offset="100%"/>
+				        </linearGradient>
+				    </defs>
+				    <path d="M384.557 116.012V305H0L210.643 0l173.914 116.012z" fill="url(#footer-bg)" fill-rule="evenodd"/>
+				</svg>
+			</div>
+			<div class="footer-dots is-moving-object is-translating" data-translating-factor="160">
+				<svg width="69" height="91" xmlns="http://www.w3.org/2000/svg">
+				    <g fill="#43F1FF" fill-rule="evenodd">
+				        <path d="M37.105 41.007l-2.9 1.334-.786 2.823.926 2.689 2.76 1.154 2.6-1.31 1.714-2.533-1.296-2.94z"/>
+				        <path fill-opacity=".64" d="M63.109 27.24l-1.45.666-.394 1.412.464 1.344 1.38.577 1.3-.655.856-1.266-.647-1.47z"/>
+				        <path fill-opacity=".24" d="M66.226 86.638l-1.45.667-.393 1.412.463 1.344 1.38.577 1.3-.655.857-1.266-.648-1.47z"/>
+				        <path fill-opacity=".64" d="M13.497 43.713l-2.175 1-.59 2.118.695 2.016 2.07.866 1.95-.983 1.285-1.9-.972-2.204z"/>
+				        <path fill-opacity=".8" d="M59.076 56.658l-2.175 1-.59 2.117.695 2.017 2.07.866 1.949-.983 1.286-1.9-.972-2.204z"/>
+				        <path fill-opacity=".48" d="M22.262 18.49l-1.45.667-.393 1.412.463 1.344 1.38.577 1.3-.655.857-1.266-.648-1.47z"/>
+				        <path fill-opacity=".64" d="M23.422.5l-1.45.667-.393 1.412.463 1.344 1.38.577 1.3-.655.857-1.266-.648-1.47z"/>
+				        <path fill-opacity=".48" d="M2.637 12.5l-1.45.667-.393 1.412.463 1.344 1.38.577 1.3-.655.857-1.266-.648-1.47zM36.563 10.856l-.725.334-.197.706.232.672.69.288.65-.327.428-.633-.324-.735z"/>
+				    </g>
+				</svg>
+			</div>
+            <div class="container">
+                <div class="site-footer-inner has-top-divider">
+                    <div class="footer-copyright">&copy; 2018 Ellie, all rights reserved</div>
+					<ul class="footer-social-links list-reset">
+						<li>
+							<a href="#">
+								<span class="screen-reader-text">Facebook</span>
+								<svg width="16" height="16" xmlns="http://www.w3.org/2000/svg">
+									<path d="M6.023 16L6 9H3V6h3V4c0-2.7 1.672-4 4.08-4 1.153 0 2.144.086 2.433.124v2.821h-1.67c-1.31 0-1.563.623-1.563 1.536V6H13l-1 3H9.28v7H6.023z" fill="#FFFFFF"/>
+								</svg>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<span class="screen-reader-text">Twitter</span>
+								<svg width="16" height="16" xmlns="http://www.w3.org/2000/svg">
+									<path d="M16 3c-.6.3-1.2.4-1.9.5.7-.4 1.2-1 1.4-1.8-.6.4-1.3.6-2.1.8-.6-.6-1.5-1-2.4-1-1.7 0-3.2 1.5-3.2 3.3 0 .3 0 .5.1.7-2.7-.1-5.2-1.4-6.8-3.4-.3.5-.4 1-.4 1.7 0 1.1.6 2.1 1.5 2.7-.5 0-1-.2-1.5-.4C.7 7.7 1.8 9 3.3 9.3c-.3.1-.6.1-.9.1-.2 0-.4 0-.6-.1.4 1.3 1.6 2.3 3.1 2.3-1.1.9-2.5 1.4-4.1 1.4H0c1.5.9 3.2 1.5 5 1.5 6 0 9.3-5 9.3-9.3v-.4C15 4.3 15.6 3.7 16 3z" fill="#FFFFFF"/>
+								</svg>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<span class="screen-reader-text">Google</span>
+								<svg width="16" height="16" xmlns="http://www.w3.org/2000/svg">
+									<path d="M7.9 7v2.4H12c-.2 1-1.2 3-4 3-2.4 0-4.3-2-4.3-4.4 0-2.4 2-4.4 4.3-4.4 1.4 0 2.3.6 2.8 1.1l1.9-1.8C11.5 1.7 9.9 1 8 1 4.1 1 1 4.1 1 8s3.1 7 7 7c4 0 6.7-2.8 6.7-6.8 0-.5 0-.8-.1-1.2H7.9z" fill="#FFFFFF"/>
+								</svg>
+							</a>
+						</li>
+					</ul>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script >
+		!function(){const t=window,e=document.documentElement;if(e.classList.remove("no-js"),e.classList.add("js"),document.body.classList.contains("has-animations")){(window.sr=ScrollReveal()).reveal(".hero-title, .hero-paragraph, .hero-form",{duration:1e3,distance:"40px",easing:"cubic-bezier(0.5, -0.01, 0, 1.005)",origin:"bottom",interval:150})}const s=document.querySelectorAll(".is-moving-object");let n=0,i=0,a=0,o=0,r=0,l=e.clientWidth,c=e.clientHeight;s&&t.addEventListener("mousemove",function(t,e){let s=null,n=e;return(...e)=>{let i=Date.now();(!s||i-s>=n)&&(s=i,t.apply(this,e))}}(function(e){!function(e,s){n=e.pageX,i=e.pageY,a=t.scrollY,o=l/2-n,r=c/2-(i-a);for(let t=0;t<s.length;t++){const e=s[t].getAttribute("data-translating-factor")||20,n=s[t].getAttribute("data-rotating-factor")||20,i=s[t].getAttribute("data-perspective")||500;let a=[];s[t].classList.contains("is-translating")&&a.push("translate("+o/e+"px, "+r/e+"px)"),s[t].classList.contains("is-rotating")&&a.push("perspective("+i+"px) rotateY("+-o/n+"deg) rotateX("+r/n+"deg)"),(s[t].classList.contains("is-translating")||s[t].classList.contains("is-rotating"))&&(a=a.join(" "),s[t].style.transform=a,s[t].style.transition="transform 1s ease-out",s[t].style.transformStyle="preserve-3d",s[t].style.backfaceVisibility="hidden")}}(e,s)},150))}();
+	</script>
+</body>
+</html>
