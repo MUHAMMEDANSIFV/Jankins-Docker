@@ -28,11 +28,8 @@ pipeline {
 
         stage('Build Docker Image') {
             steps {
-               script {
-    // Build the Docker image from the Dockerfile in the 'dockerfiles' directory
-    docker.build("ansif4031/jankin-with-docker", "-f dockerfiles/Dockerfile .")
-}
-            }
+      	sh 'docker build -t node-app:1.0.0 .'
+      }
         }
 
         stage('Push to Docker Registry') {
