@@ -7,7 +7,7 @@ pipeline {
     }
 
     environment {
-        DOCKER_REGISTRY_URL = 'ansif4031/jankin-with-docker:tagname'  // Replace with your Docker registry URL
+        DOCKER_REGISTRY_URL = 'ansif4031/jankin-with-docker'  // Replace with your Docker registry URL
         IMAGE_NAME = 'jankins-with-docker'
         IMAGE_TAG = 'v1.0'  // Replace with your desired version or tag
     }
@@ -30,7 +30,7 @@ pipeline {
             steps {
                script {
     // Build the Docker image from the Dockerfile in the 'dockerfiles' directory
-    docker.build("${DOCKER_REGISTRY_URL}/${IMAGE_NAME}:${IMAGE_TAG}", "-f dockerfiles/Dockerfile .")
+    docker.build("ansif4031/jankin-with-docker", "-f dockerfiles/Dockerfile .")
 }
             }
         }
