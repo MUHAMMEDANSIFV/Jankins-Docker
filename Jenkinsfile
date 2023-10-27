@@ -28,10 +28,10 @@ pipeline {
 
         stage('Build Docker Image') {
             steps {
-                script {
-                    // Build the Docker image
-                    docker.build("${DOCKER_REGISTRY_URL}/${IMAGE_NAME}:${IMAGE_TAG}", "-f Dockerfile .")
-                }
+               script {
+    // Build the Docker image from the Dockerfile in the 'dockerfiles' directory
+    docker.build("${DOCKER_REGISTRY_URL}/${IMAGE_NAME}:${IMAGE_TAG}", "-f dockerfiles/Dockerfile .")
+}
             }
         }
 
