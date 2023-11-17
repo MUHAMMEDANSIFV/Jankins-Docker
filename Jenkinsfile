@@ -1,60 +1,40 @@
 pipeline {
-    agent {
-        docker {
-            image 'node:latest'
-            args '-p 4000:4000'
-        }
-    }
-
-    environment {
-        DOCKER_REGISTRY_URL = 'ansif4031/jankin-with-docker'  // Replace with your Docker registry URL
-        IMAGE_NAME = 'jankins-with-docker'
-        IMAGE_TAG = 'v1.0'  // Replace with your desired version or tag
-    }
+    agent any
 
     stages {
-
-        stage('Build') {
-            steps {
-                sh 'npm install'
-            }
-        }
-
-        stage('Checkout') {
-            steps {
-                checkout scm
-            }
-        }
-
-        stage('Build Docker Image') {
-            steps {
-      	sh 'docker build -t node-app:1.0.0 .'
-      }
-        }
-
-        stage('Push to Docker Registry') {
+        stage('Clone and Push') {
             steps {
                 script {
-                    // Log in to the Docker registry
-                    withCredentials([usernamePassword(credentialsId: 'docker-hub-credentials', passwordVariable: 'DOCKER_PASSWORD', usernameVariable: 'DOCKER_USERNAME')]) {
-                        def dockerLogin = "docker login -u ${DOCKER_USERNAME} -p ${DOCKER_PASSWORD} ${DOCKER_REGISTRY_URL}"
-                        sh "${dockerLogin}"
-                    }
+                    // Define your repository URLs and credentials
+                    def sourceRepo = 'https://github.com/MUHAMMEDANSIFV/Jankins-Docker.git'
+                    def destinationRepo = 'https://github.com/MUHAMMEDANSIFV/Clone-Jankins-Docker.git'
+                    def sourceCredentialsId = 'b5c46823-d8d3-4833-8064-4b2d087dd48d'
+                    def destinationCredentialsId = 'b5c46823-d8d3-4833-8064-4b2d087dd48d'
 
-                    // Push the Docker image to the registry
-                    sh "docker push ${DOCKER_REGISTRY_URL}/${IMAGE_NAME}:${IMAGE_TAG}"
+                    // Define the branch name
+                    def branchName = 'master'
+
+                    // Clone the source repository
+                    checkout([$class: 'GitSCM',
+                        branches: [[name: "refs/remotes/origin/${branchName}"]],
+                        doGenerateSubmoduleConfigurations: false,
+                        extensions: [[$class: 'CleanBeforeCheckout']],
+                        submoduleCfg: [],
+                        userRemoteConfigs: [[credentialsId: sourceCredentialsId, url: sourceRepo]]
+                    ])
+
+                    // Check if the branch exists in the destination repository
+                    def branchExists = sh(script: "git ls-remote --heads ${destinationRepo} ${branchName}", returnStatus: true) == 0
+
+                    if (!branchExists) {
+                        // If the branch doesn't exist, create a new branch in the destination repository
+                        sh "git push ${destinationRepo} ${branchName}:${branchName}"
+                    } else {
+                        // If the branch exists, push changes to the existing branch in the destination repository
+                        sh "git push ${destinationRepo} ${branchName}"
+                    }
                 }
             }
         }
     }
-
-    post {
-        success {
-            echo 'Docker image build and push were successful!'
-        }
-        failure {
-            echo 'Docker image build or push failed!'
-        }
-    }
 }
-
