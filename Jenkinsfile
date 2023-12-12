@@ -2,22 +2,25 @@ pipeline {
     agent any
 
     tools {
-        nodejs "Node.js" // Assuming "Node.js" is configured in Jenkins
-    }
+    nodejs 'Node.js'
+}
 
     stages {
-        stage('checkout') {
-            steps {
-                git branch: 'master', url: 'https://github.com/MUHAMMEDANSIFV/Jankins-Docker.git'
-            }
+         stage('checkout') {
+        steps {
+            git branch: 'master', url: 'https://github.com/MUHAMMEDANSIFV/Jankins-Docker.git'
         }
+    }
 
-        stage('Execute Node.js Build') {
-            steps {
-                sh 'npm install' // Modify this as needed based on your Node.js project setup
+    stage('Execute Node.js Build') {
+        steps {
+            script {
+                // Assuming your Node.js project uses npm
+                sh 'npm install'
                 // Add other Node.js build steps as needed
             }
         }
+    }
 
         stage('Docker Build and Tag') {
             steps {
